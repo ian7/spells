@@ -3,7 +3,7 @@ config:
   boot.autostart: "true"
   linux.kernel_modules: ip_tables,ip6_tables,netlink_diag,nf_nat,overlay
   raw.lxc: |
-    lxc.aa_profile=unconfined
+    lxc.apparmor.profile=unconfined
     lxc.mount.auto=proc:rw sys:rw
     lxc.cap.drop=
   security.nesting: "true"
@@ -18,7 +18,7 @@ devices:
     path: /sys/module/apparmor/parameters/enabled
     source: /dev/null
     type: disk
-  root:
-    path: /
-    pool: conjureup
-    type: disk
+  aadisable2:
+    path: /dev/kmsg
+    source: /dev/kmsg
+    type: unix-char
