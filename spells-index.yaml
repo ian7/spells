@@ -31,6 +31,14 @@ kubernetes:
       name: Kubernetes Core
       description: |
         Kubernetes is an open-source platform for deploying, scaling, and operations of application containers across a cluster of hosts. This is a minimal Kubernetes cluster with intended usage for small deployments for testing and development.
+    - key: kubernetes-core
+      name: Kubernetes Core
+      description: |
+        Kubernetes is an open-source platform for deploying, scaling, and operations of application containers across a cluster of hosts. This is a minimal Kubernetes cluster with intended usage for small deployments for testing and development.
+    - key: mk8s
+      name: mk8s
+      description: |
+        Kubernetes is an open-source platform for deploying, scaling, and operations of application containers across a cluster of hosts. This is a minimal Kubernetes cluster with intended usage for small deployments for testing and development.
 bigdata:
   spells:
     - key: hadoop-processing
